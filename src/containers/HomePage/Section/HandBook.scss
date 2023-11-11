@@ -1,0 +1,15 @@
+.handbook{
+    display: flex !important;
+    .handbook-img{
+        width: 50% !important;
+        margin-right: 10px !important;
+    }
+
+    .handbook-text{
+        align-items: center;
+        width: 40% !important;
+        font-weight: 600;
+        font-size: 18px!important;
+        line-height: 1.6;
+    }
+}

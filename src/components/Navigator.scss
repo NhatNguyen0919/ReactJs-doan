@@ -69,9 +69,14 @@
                         }
                     }
                 }
-                &.active span {
+                &.active {
                     font-weight: 500;
                     color: $colormain;
+                    background: #ededed;
+                    a {
+                        color: chocolate;
+                    }
+
                 }
                 &:hover {
                     background-color: darken($bg-menu-color, 3);

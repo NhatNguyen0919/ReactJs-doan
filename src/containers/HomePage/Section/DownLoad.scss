@@ -1,0 +1,67 @@
+.wrapper-content {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    border-bottom: 2px solid #45c3d2;
+
+    .container {
+        padding: 95px 0;
+        width: 40%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .left-content {
+        height: 100%;
+        width: 30%;
+
+        .app-img {
+            background-image: url(https://bookingcare.vn/assets/anh/bookingcare-app-2020.png);
+            background-repeat: no-repeat;
+            background-size: 200px auto;
+            height: 100%;
+        }
+    }
+
+    .right-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 70%;
+
+        ul {
+            li {
+                list-style: none;
+                margin: 10px;
+                font-size: 16px;
+                i {
+                    margin-left: 2px;
+                    color: #45c3d2;
+                }
+            }
+
+        }
+
+        .app-link {
+            display: flex;
+            flex-direction: row;
+
+            .ios {
+                background-image: url(https://bookingcare.vn/assets/icon/google-play-badge.svg);
+                background-repeat: no-repeat;
+                background-size: 200px auto;
+                height: 100px;
+                width: 40%;
+            }
+
+            .android {
+                background-image: url(https://bookingcare.vn/assets/icon/app-store-badge-black.svg);
+                background-repeat: no-repeat;
+                background-size: 200px auto;
+                height: 100px;
+                width: 40%;
+            }
+        }
+
+    }
+}
