@@ -13,7 +13,8 @@ import System from '../routes/System';
 import 'react-toastify/dist/ReactToastify.css';
 import detailDoctor from './Patient/Doctor/detailDoctor';
 import { CustomToastCloseButton } from '../components/CustomToast';
-import HomePage from '../containers/HomePage/HomePage'
+import HomePage from '../containers/HomePage/HomePage';
+import Doctor from '../routes/Doctor';
 class App extends Component {
     handlePersistorState = () => {
         const { persistor } = this.props;
@@ -46,7 +47,9 @@ class App extends Component {
                                     <Route path={path.HOMEPAGE} component={HomePage} />
                                     <Route path={path.LOGIN} component={userIsNotAuthenticated(Login)} />
                                     <Route path={path.SYSTEM} component={userIsAuthenticated(System)} />
+                                    <Route path={'/doctor/'} component={userIsAuthenticated(Doctor)} />
                                     <Route path={path.DETAIL_DOCTOR} component={detailDoctor} />
+
                                 </Switch>
                             </CustomScrollbars>
                         </div>
