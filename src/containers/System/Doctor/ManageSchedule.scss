@@ -9,7 +9,42 @@
     }
 
     .pick-hour-container {
+        margin: 20px;
+        flex-wrap: wrap;
+        display: flex;
+        gap: 20px;
         height: 150px;
-        border: 1px solid red;
+        align-content: flex-start;
+
+        .btn-schedule {
+            padding: 10px 20px;
+            text-transform: uppercase;
+            border-radius: 8px;
+            font-size: 17px;
+            font-weight: 500;
+            color: #000000;
+            text-shadow: none;
+            background: rgb(255, 255, 255);
+            box-shadow: transparent;
+            border: 1px solid #ffffff80;
+            transition: 0.5s ease;
+            user-select: none;
+            border: 1px solid #000000;
+
+
+            &:hover,
+            &:focus {
+                color: #000000a9;
+                background: #ffffff;
+                border: 1px solid #000000;
+                text-shadow: 0 0 5px #ffffff,
+                            0 0 10px #ffffff,
+                            0 0 20px #ffffff;
+                box-shadow: 0 0 5px #000000,
+                            0 0 20px #000000,
+                            0 0 50px #000000,
+                            0 0 100px #000000;
+            }
+        }
     }
 }

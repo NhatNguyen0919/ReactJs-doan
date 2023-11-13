@@ -86,6 +86,10 @@
         "more-info": "More infor"
     },
     "manage-schedule": {
-        "title": "Physician Appointment Management"
+        "title": "Physician Appointment Management",
+        "choose-doctor": "Select a Doctor",
+        "choose-day": "Select Day",
+        "save-in4":"Save"
+
     }
 }
