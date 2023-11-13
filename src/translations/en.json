@@ -63,7 +63,7 @@
             "handbook-manage": "Manage handbook"
         },
         "doctor": {
-            "manage-schedule":"Manage doctor schedule"
+            "manage-schedule": "Manage doctor schedule"
         }
     },
     "manage-users": {
@@ -83,6 +83,9 @@
     },
     "homepage": {
         "out-standing-doctors": "Outstanding Doctors",
-        "more-info":"More infor"
+        "more-info": "More infor"
+    },
+    "manage-schedule": {
+        "title": "Physician Appointment Management"
     }
 }
