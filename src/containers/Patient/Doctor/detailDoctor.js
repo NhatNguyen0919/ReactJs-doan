@@ -5,7 +5,7 @@ import './DetailDoctor.scss';
 import * as actions from '../../../store/actions';
 import { getDetailInfoDoctors } from '../../../services/userService';
 import { LANGUAGES } from '../../../utils';
-
+import DoctorSchedule from './DoctorSchedule';
 
 
 class DetailDoctor extends Component {
@@ -79,14 +79,29 @@ class DetailDoctor extends Component {
                         </div>
                     </div>
                     <div className='schedule-doctor'>
+                        <div className='content-left'>
+                            <DoctorSchedule
+                                doctorId=
+                                {
+                                    this.state.doctorInfor &&
+                                        this.state.doctorInfor.id ?
+                                        this.state.doctorInfor.id : -1
+                                }
+                            >
 
+                            </DoctorSchedule>
+                        </div>
+                        <div className='content-right'>
+
+                        </div>
                     </div>
                     <div className='detail-infor-doctor'>
                         {doctorInfor &&
                             doctorInfor.Markdown
                             && doctorInfor.Markdown.contentHTML
-                            && <div dangerouslySetInnerHTML={{ __html: doctorInfor.Markdown.contentHTML
-                             }}>
+                            && <div dangerouslySetInnerHTML={{
+                                __html: doctorInfor.Markdown.contentHTML
+                            }}>
 
                             </div>
                         }
