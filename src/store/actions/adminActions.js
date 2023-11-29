@@ -310,4 +310,42 @@ export const fetchAllScheduleHours = () => {
     }
 }
 
+export const getRequireDoctorInfor = () => {
+    return async (dispatch, getState) => {
+        try {
+            dispatch({
+                type: actionTypes.FETCH_REQUIRED_DOCTOR_INFOR_START
+            })
+
+            let priceRes = await getAllCodeService("PRICE");
+            let paymentRes = await getAllCodeService("PAYMENT");
+            let provinceRes = await getAllCodeService("PROVINCE");
+            if (priceRes && priceRes.errorCode === 0 &&
+                paymentRes && paymentRes.errorCode === 0 &&
+                provinceRes && provinceRes.errorCode === 0) {
+                let data = {
+                    priceRes: priceRes.data,
+                    paymentRes: paymentRes.data,
+                    provinceRes: provinceRes.data
+                }
+                dispatch(fetchRequireInforSuccess(data));
+            } else {
+                dispatch(fetchRequireInforFailed());
+            }
+        } catch (error) {
+            dispatch(fetchRequireInforFailed());
+            console.log("fetch gender fail", error);
+        }
+    }
+}
+
+export const fetchRequireInforSuccess = (allRequireData) => ({
+    type: actionTypes.FETCH_REQUIRED_DOCTOR_INFOR_SUCCESS,
+    data: allRequireData
+})
+
+export const fetchRequireInforFailed = () => ({
+    type: actionTypes.FETCH_REQUIRED_DOCTOR_INFOR_FAILED
+})
+
 

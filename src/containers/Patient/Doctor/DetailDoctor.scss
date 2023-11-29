@@ -59,18 +59,17 @@
     }
 
     .schedule-doctor {
-        padding: 0 100px;
+        padding: 10px 100px;
         display: flex;
-        height: 200px;
-        
+        min-height: 200px;
 
-        .content-left{
+
+        .content-left {
             width: 50%;
-            border: 1px solid red;
         }
-        .content-right{
+
+        .content-right {
             width: 50%;
-            border: 1px solid red;
         }
 
     }

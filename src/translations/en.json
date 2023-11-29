@@ -89,7 +89,28 @@
         "title": "Physician Appointment Management",
         "choose-doctor": "Select a Doctor",
         "choose-day": "Select Day",
-        "save-in4":"Save"
-
+        "save-in4": "Save"
+    },
+    "patients": {
+        "detail-doctor": {
+            "schedule": "Schedule",
+            "no-schedule": "No appointments available. Please come back later.",
+            "choose-book": "Choose and book for free"
+        }
+    },
+    "admin": {
+        "manage-doctor": {
+            "title": "Add Doctor Information",
+            "select-doctor": "Select Doctors",
+            "intro-infor": "Introduction Information",
+            "add": "Add",
+            "save": "Save",
+            "price": "Medical Examination Fee",
+            "payment": "Payment Methods",
+            "province": "Province",
+            "nameClinic": "Medical Clinic Name",
+            "addressClinic": "Clinic Address",
+            "note": "Note"
+        }
     }
 }
