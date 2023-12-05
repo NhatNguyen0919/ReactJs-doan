@@ -39,7 +39,6 @@ class Login extends Component {
         })
         try {
             let data = await handleLogin(this.state.username, this.state.password)
-            console.log(data);
 
             if (data && data.errorCode !== 0) {
                 this.setState({
@@ -49,7 +48,6 @@ class Login extends Component {
             if (data && data.errorCode === 0) {
                 // todo
                 this.props.userLoginSuccess(data.user)
-                console.log('login success');
             }
         } catch (error) {
             if (error.response) {

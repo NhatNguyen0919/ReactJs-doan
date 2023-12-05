@@ -85,7 +85,6 @@ class ModalEditUser extends Component {
 
 
     render() {
-        console.log('check props from parent :', this.props);
         return (
             <div className="text-center" >
                 <Modal

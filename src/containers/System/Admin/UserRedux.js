@@ -177,7 +177,6 @@ class UserRedux extends Component {
         this.props.fetchUserRedux();
 
 
-        console.log("before submit check state", this.state.genderArr);
     }
 
     checkValidateInput = () => {

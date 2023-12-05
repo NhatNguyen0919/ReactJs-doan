@@ -72,7 +72,6 @@ class UserManage extends Component {
     }
 
     handleDeleteUser = async (user) => {
-        console.log("user:", user);
         try {
             let res = await deleteUSerService(user.id)
             if (res && res.errorCode === 0) {
@@ -86,7 +85,6 @@ class UserManage extends Component {
     }
 
     handleEditUser = (user) => {
-        console.log('check edit user', user);
         this.setState({
             isOpenModelEditUser: true,
             userEdit: user

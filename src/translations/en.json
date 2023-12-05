@@ -96,6 +96,28 @@
             "schedule": "Schedule",
             "no-schedule": "No appointments available. Please come back later.",
             "choose-book": "Choose and book for free"
+        },
+        "extra-infor-doctors": {
+            "text-address": "CLINIC ADDRESS",
+            "price": "Examination Fee",
+            "detail": "More information",
+            "payment": "The clinic accepts payment through ",
+            "hide-price": "Hide information"
+        },
+        "booking-modal": {
+            "title": "Appointment Booking Information",
+            "name":"Full Name",
+            "phone-number":"Phone number",
+            "birthday":"Date of Birth",
+            "reasons":"Reason for Consultation",
+            "address":"Address",
+            "gender":"Gender",
+            "confirm":"Confirm",
+            "cancel":"Cancel",
+            "price":"Examination Fee"
+
+
+
         }
     },
     "admin": {
@@ -105,7 +127,7 @@
             "intro-infor": "Introduction Information",
             "add": "Add",
             "save": "Save",
-            "price": "Medical Examination Fee",
+            "price": "Examination Fee",
             "payment": "Payment Methods",
             "province": "Province",
             "nameClinic": "Medical Clinic Name",

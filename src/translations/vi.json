@@ -70,6 +70,25 @@
             "schedule": "Lịch khám",
             "no-schedule": "Không có lịch hẹn .Vui lòng quay lại sau",
             "choose-book": "Chọn và đặt miễn phí "
+        },
+        "extra-infor-doctors":{
+            "text-address":"ĐỊA CHỈ PHÒNG KHÁM",
+            "price":"Giá khám ",
+            "detail":"Xem chi tiết",
+            "payment":"Phòng khám có thanh toán bằng hình thức ",
+            "hide-price":"Ẩn bảng giá"
+        },
+        "booking-modal":{
+            "title":"Thông tin đặt lịch khám bệnh",
+            "name":"Họ và tên",
+            "phone-number":"Số điện thoại",
+            "birthday":"Ngày sinh",
+            "reasons":"Lý do khám",
+            "address":"Địa chỉ Liên hệ",
+            "gender":"Giới tính",
+            "confirm":"Xác nhận",
+            "cancel":"Hủy",
+            "price":"Giá khám "
         }
     },
     "admin": {

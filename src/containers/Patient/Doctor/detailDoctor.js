@@ -6,6 +6,7 @@ import * as actions from '../../../store/actions';
 import { getDetailInfoDoctors } from '../../../services/userService';
 import { LANGUAGES } from '../../../utils';
 import DoctorSchedule from './DoctorSchedule';
+import DoctorExtra from './DoctorExtra';
 
 
 class DetailDoctor extends Component {
@@ -50,7 +51,6 @@ class DetailDoctor extends Component {
             nameVi = `${doctorInfor.positionData.valueVi}, ${doctorInfor.lastName} ${doctorInfor.firstName}`;
             nameEn = `${doctorInfor.positionData.valueEn}, ${doctorInfor.lastName} ${doctorInfor.firstName}`;
         }
-        console.log("Check cc :", doctorInfor);
         return (
             <>
                 <div>
@@ -94,7 +94,12 @@ class DetailDoctor extends Component {
                             </DoctorSchedule>
                         </div>
                         <div className='content-right'>
-
+                            <DoctorExtra
+                                doctorId=
+                                {
+                                    this.state.currenDoctorId
+                                }
+                            />
                         </div>
                     </div>
                     <div className='detail-infor-doctor'>
